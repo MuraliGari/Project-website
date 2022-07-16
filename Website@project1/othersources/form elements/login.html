@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="otherstyles.css">
+        <style>
+            @media only screen and (max-width:600px){
+                label{
+                    display: block;
+                }
+                input{
+                    display: block;
+                }
+                a{
+                    display: inline-block;
+                    margin-top: 30px;
+                    margin-left: 40px;
+                }
+                a::before{
+                    content: ();
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="home()">    
+            <label>Username: </label><input type="text" required id="usrname"><br>
+            <label>Password: </label><input type="password" required id="passwd"><br>
+            <input type="submit"><a href="form.html">Register</a>
+        </form>
+        <script>
+            function home(){
+                document.body.innerHTML="<object type='text/html' height=540px width=100% data='home.html'></object>"
+            }
+        </script>
+    </body>
+</html>
